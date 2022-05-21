@@ -1,0 +1,31 @@
+﻿<Window x:Class="Ilyfairy.Tools.DesktopTranslate.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ilyfairy.Tools.DesktopTranslate"
+        xmlns:wv2="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
+        xmlns:model="clr-namespace:Ilyfairy.Tools.DesktopTranslate.Model"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="900"
+        Style="{StaticResource WindowDefaultStyleKey}"
+        Loaded="Window_Loaded"
+        >
+
+    <Window.DataContext>
+        <model:MainContext>
+        </model:MainContext>
+    </Window.DataContext>
+    
+    <Grid Name="grid">
+        
+        <Grid.RowDefinitions>
+        </Grid.RowDefinitions>
+
+
+        <wv2:WebView2 Name="web" Grid.Row="1" Source="" >
+            
+        </wv2:WebView2>
+        
+    </Grid>
+</Window>
