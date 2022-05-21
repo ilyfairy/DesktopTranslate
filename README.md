@@ -1,3 +1,3 @@
 # DesktopTranslate
 
-[](./view.png)
+![](./view.png)
